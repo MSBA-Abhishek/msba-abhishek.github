@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abhishek Basnet · Business Analyst</title>
+  <meta name="description" content="Abhishek Basnet - Business Analyst & Data Specialist portfolio showcasing experience in Power BI, Python, and advanced analytics">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#d7f8df;
+      --card:#ecfff0;
+      --muted:#37493f;
+      --text:#1b2b1d;
+      --accent:#41a36a;
+      --accent-2:#67cc94;
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;color:var(--text);background:var(--bg);}    
+    a{color:inherit;text-decoration:none}
+    .container{width:min(1100px,94%);margin:0 auto}
+    nav{position:sticky;top:0;background:rgba(255,255,255,0.6);backdrop-filter:blur(6px);border-bottom:1px solid rgba(0,0,0,0.05);z-index:20}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .logo{font-weight:700;letter-spacing:.6px;color:var(--accent)}
+    .nav-links{display:flex;gap:12px;align-items:center}
+    .nav-link{padding:8px 12px;border-radius:10px;color:var(--muted);font-weight:600}
+    .nav-link:hover{background:rgba(0,0,0,0.05);color:var(--text)}
+    .btn{background:linear-gradient(180deg,var(--accent-2),var(--accent));padding:8px 12px;border-radius:10px;border:none;color:white;cursor:pointer;font-weight:600;}
+    .btn:hover{opacity:0.9}
+
+    .hero{display:grid;grid-template-columns:1fr 340px;gap:28px;padding:44px 0;align-items:center}
+    .hero-left h1{font-size:clamp(1.6rem,2.8vw,2.6rem);margin:0 0 8px;color:var(--accent)}
+    .kicker{color:var(--muted);text-transform:uppercase;font-weight:700;font-size:.8rem}
+    .lead{color:var(--text);line-height:1.45}
+
+    .profile-card{background:var(--card);border:1px solid rgba(0,0,0,0.05);padding:18px;border-radius:var(--radius);display:flex;flex-direction:column;gap:12px}
+    .avatar{width:100%;display:flex;justify-content:center}
+    .avatar img{width:120px;height:120px;border-radius:999px;object-fit:cover;border:4px solid var(--accent)}
+
+    .metrics{display:flex;gap:10px;margin-top:14px}
+    .metric{background:var(--card);padding:10px;border-radius:10px;flex:1;text-align:center;border:1px solid rgba(0,0,0,0.05)}
+    .metric b{display:block;font-size:1.1rem;color:var(--accent)}
+
+    .projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+    .project-card{padding:14px;border-radius:12px;background:var(--card);border:1px solid rgba(0,0,0,0.05)}
+    .proj-thumb{height:140px;border-radius:8px;background:rgba(0,0,0,0.05);display:flex;align-items:center;justify-content:center;overflow:hidden}
+    .proj-thumb img{width:100%;height:100%;object-fit:cover}
+
+    .timeline-vertical{position:relative;padding-left:56px;margin-top:18px}
+    .timeline-vertical::before{content:'';position:absolute;left:26px;top:8px;bottom:8px;width:4px;background:linear-gradient(180deg,var(--accent),var(--accent-2));border-radius:4px}
+    .exp-item{position:relative;display:flex;gap:12px;padding:12px 12px 12px 18px;border-radius:10px;background:var(--card);border:1px solid rgba(0,0,0,0.05);margin-bottom:18px}
+    .exp-item::before{content:'';position:absolute;left:-34px;top:16px;width:14px;height:14px;border-radius:50%;background:var(--accent)}
+    .exp-meta .badge{background:linear-gradient(90deg,var(--accent),var(--accent-2));padding:6px 8px;border-radius:8px;font-weight:700;color:white}
+
+    footer{padding:36px 0;text-align:center;color:var(--muted)}
+
+    @media(max-width:980px){.hero{grid-template-columns:1fr}.projects-grid{grid-template-columns:1fr 1fr}.profile-card{order:2}}
+    @media(max-width:640px){.projects-grid{grid-template-columns:1fr}.nav-links{display:none}}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container nav-inner">
+      <div class="logo">Abhishek Basnet</div>
+      <div class="nav-links">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#skills">Skills</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <section id="about" class="hero">
+      <div class="hero-left">
+        <div class="kicker">Business Analytics · Data · Product</div>
+        <h1>Hi, I'm <strong>Abhishek Basnet</strong></h1>
+        <p class="lead">I design dashboards, build lightweight ML prototypes, and streamline reporting so leaders can act fast. I hold an MSBA and have experience in healthcare, retail, and operations.</p>
+
+        <div style="display:flex;gap:14px;align-items:center;margin-top:18px;flex-wrap:wrap">
+          <a class="btn" href="mailto:axb9876@gmail.com" title="Email Abhishek">✉️ &nbsp; axb9876@gmail.com</a>
+          <a class="btn" href="tel:+16824073837" style="background:transparent;color:var(--accent);border:1px solid rgba(0,0,0,0.06);">
+            📞 &nbsp; (682) 407 - 3837
+          </a>
+        </div>
+
+        <div style="margin-top:12px;color:var(--muted);display:flex;align-items:center;gap:8px">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color:var(--muted)"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2v6M12 22v-6M4.93 4.93l4.24 4.24M14.83 14.83l4.24 4.24M2 12h6M22 12h-6M4.93 19.07l4.24-4.24M14.83 9.17l4.24-4.24"/></svg>
+          <span>Dallas, Texas</span>
+        </div>
+
+        <div class="metrics" style="margin-top:18px">
+          <div class="metric"><b>10+</b><small class="muted">Projects</small></div>
+          <div class="metric"><b>4.0</b><small class="muted">GPA (MSBA)</small></div>
+          <div class="metric"><b>8</b><small class="muted">Skills</small></div>
+        </div>
+
+        <div style="margin-top:18px;background:var(--card);padding:14px;border-radius:12px;border:1px solid rgba(0,0,0,0.05)">
+          <h3 style="margin:0 0 8px;color:var(--accent)">What I'm up to</h3>
+          <p style="margin:0;color:var(--text)">Building KPI dashboards, experimenting with GenAI document QA, and improving forecasting for inventory and sales. Currently exploring LLM-assisted data workflows and deploying analytics prototypes with Streamlit.</p>
+        </div>
+      </div>
+
+      <aside class="profile-card">
+        <div class="avatar"><img id="profileImg" src="/assets/profile.jpg" alt="profile"></div>
+        <div style="text-align:center;color:var(--muted);font-size:.95rem;margin-top:8px">MSBA Candidate • Data & Analytics • Power BI, Python, SQL</div>
+      </aside>
+    </section>
+
+    <section id="projects" style="margin-top:6px">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </section>
+
+    <section id="experience" style="margin-top:22px">
+      <h2>Work Experience</h2>
+      <div class="timeline-vertical" id="timelineVertical">
+        <div class="exp-item">
+          <div class="exp-meta">
+            <div class="badge">2024–2025</div>
+            <div style="margin-top:8px;color:var(--muted)">UT Arlington — Graduate TA / Research</div>
+          </div>
+          <div class="exp-body">
+            <h3>Graduate Teaching Assistant & Research Analyst</h3>
+            <p>Python & AI for Business instruction; NLP and network graph research for social media analysis; Power BI healthcare dashboards.</p>
+          </div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-meta">
+            <div class="badge">2019–2023</div>
+            <div style="margin-top:8px;color:var(--muted)">Himalayan Agro — Nepal</div>
+          </div>
+          <div class="exp-body">
+            <h3>Business Analyst</h3>
+            <p>Financial dashboards, forecasting, variance analysis, and executive reporting that supported a 50% equipment subsidy approval.</p>
+          </div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-meta">
+            <div class="badge">2017–2019</div>
+            <div style="margin-top:8px;color:var(--muted)">Suzuki — Nepal</div>
+          </div>
+          <div class="exp-body">
+            <h3>Advisor / Analyst — Service Operations</h3>
+            <p>Inventory forecasting, demand projection (85% accuracy), customer databases and service operations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" style="margin-top:22px">
+      <h2>Skills & Expertise</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px">
+        <div style="background:var(--card);padding:14px;border-radius:12px;border:1px solid rgba(0,0,0,0.05)">
+          <h4 style="margin:0 0 8px;color:var(--accent)">CRM & Business Platforms</h4>
+          <div style="display:flex;flex-direction:column;gap:6px;color:var(--muted)">
+            <span style="background:#e9fff0;padding:6px 8px;border-radius:8px;display:inline-block">Requirements gathering (Salesforce)</span>
+            <span style="background:#e9fff0;padding:6px 8px;border-radius:8px;display:inline-block">Sales Cloud</span>
+            <span style="background:#e9fff0;padding:6px 8px;border-radius:8px;display:inline-block">Report & Dashboard Creation</span>
+          </div>
+        </div>
+
+        <div style="background:var(--card);padding:14px;border-radius:12px;border:1px solid rgba(0,0,0,0.05)">
+          <h4 style="margin:0 0 8px;color:var(--accent)">Methodologies</h4>
+          <div style="display:flex;flex-direction:column;gap:6px;color:var(--muted)">
+            <span style="background:#e9fff0;padding:6px 8px;border-radius:8px;display:inline-block">Agile / Scrum</span>
+            <span style="background:#e9fff0;padding:6px 8px;border-radius:8px;display:inline-block">User Stories & UAT</span>
+            <span style="background:#e9fff0;padding:6px 8px;border-radius:8px;display:inline-block">JIRA</span>
+          </div>
+        </div>
+
+        <div style="background:var(--card);padding:14px;border-radius:12px;border:1px solid rgba(0,0,0,0.05)">
+          <h4 style="margin:0 0 8px;color:var(--accent)">Programming & Tools</h4>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;color:var(--muted)">
+            <span style="background:#e9fff0;padding:6px 8px;border-radius:8px;display:inline-block">Python</span>
+            <span style="background:#e9fff0;padding:6px 8px;border-radius:8px;display:inline-block">SQL</span>
+            <span style="background:#e9fff0;padding:6px 8px;border-radius:8px;display:inline-block">Power BI</span>
+            <span style="background:#e9fff0;padding:6px 8px;border-radius:8px;display:inline-block">Tableau</span>
+            <span style="background:#e9fff0;padding:6px 8px;border-radius:8px;display:inline-block">LangChain</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div style="margin-top:22px;background:#e6fff0;padding:16px;border-radius:12px;border:2px solid var(--accent)">
+        <h3 style="margin:0 0 10px;color:var(--accent)">Certifications</h3>
+        <div style="color:var(--muted);line-height:1.8">
+          <div>
+            <a href="https://learn.microsoft.com/en-us/certifications/power-bi-data-analyst-associate/" target="_blank" style="color:var(--accent);font-weight:600;text-decoration:underline">
+              Microsoft Power BI Data Analyst (Microsoft)
+            </a>
+          </div>
+          <div>
+            <a href="https://www.coursera.org/professional-certificates/google-project-management" target="_blank" style="color:var(--accent);font-weight:600;text-decoration:underline">
+              Google Project Management Professional (Ongoing)
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- LinkedIn Blue Footer -->
+  <footer style="background:linear-gradient(90deg,#0A66C2,#1877F2);color:#fff;margin-top:30px;padding:16px 0;border-radius:10px 10px 0 0;">
+    <div class="container" style="text-align:center">
+      <h2 style="margin:0 0 8px">Let's Connect</h2>
+      <p style="margin:0 0 12px;opacity:.95">I'm always open to discussing new opportunities and collaborations.</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+        <a class="btn" href="mailto:axb9876@gmail.com" style="background:linear-gradient(180deg,#0A66C2,#1877F2);color:white;border:1px solid rgba(255,255,255,0.2)">Email Me</a>
+        <a class="btn" href="https://www.linkedin.com/in/msba-abhishek" target="_blank" style="background:linear-gradient(180deg,#0A66C2,#1877F2);color:white;border:1px solid rgba(255,255,255,0.2)">LinkedIn</a>
+        <a class="btn" href="https://github.com/msba-abhishek" target="_blank" style="background:linear-gradient(180deg,#0A66C2,#1877F2);color:white;border:1px solid rgba(255,255,255,0.2)">GitHub</a>
+      </div>
+      <p style="margin-top:12px;opacity:.9;font-size:.9rem">© <span id="y"></span> Abhishek Basnet. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const projects=[
+      {id:'p1',title:'Sales Performance Dashboard',desc:'Interactive Power BI dashboard to visualize sales and KPIs.',code:'#',summary:'#',images:['/assets/sales-1.jpg']},
+      {id:'p2',title:'Chatbot (Gen AI)',desc:'LangChain + Streamlit PDF Q&A for HR policies.',code:'#',summary:'#',images:['/assets/chatbot-1.jpg']},
+      {id:'p3',title:'Healthcare Risk Prediction',desc:'Interpretable ML with SHAP explanations.',code:'#',summary:'#',images:['/assets/health-1.jpg']}
+    ];
+    const GRID=document.getElementById('projectsGrid');
+    for(const p of projects){
+      const card=document.createElement('div');
+      card.className='project-card';
+      const imgHtml=p.images&&p.images.length?`<img src="${p.images[0]}" alt="${p.title}">`:`<div style="color:var(--muted)">No image</div>`;
+      card.innerHTML=`<div class='proj-thumb'>${imgHtml}</div><h3>${p.title}</h3><p>${p.desc}</p><div style='display:flex;gap:8px;margin-top:8px'><a class='btn' href='${p.code}' target='_blank'>View Code</a><a class='btn' href='${p.summary}' target='_blank'>Summary</a></div>`;
+      GRID.appendChild(card);
+    }
+  </script>
+</body>
+</html>
